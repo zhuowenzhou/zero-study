@@ -29,8 +29,14 @@ brew cleanup
 
 ### 安装
 
+#### 方式1
 ``` bash
 brew install nvm
+```
+
+#### 方式2
+``` bash
+git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout git describe --abbrev=0 --tags
 ```
 
 ### 配置
