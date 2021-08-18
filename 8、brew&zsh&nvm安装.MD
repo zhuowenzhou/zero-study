@@ -51,7 +51,7 @@ export NVM_DIR="$HOME/.nvm"
 
 ## oh my zsh
 
-## 安装
+### 安装
 
 ``` bash
 # 克隆仓库
@@ -63,3 +63,18 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 # 重新加载或者重启终端
 source ~/.zshrc
 ```
+### 设置主题
+1. 在.zshrc文件的修改变量 **ZSH_THEME="robbyrussell"**
+2. 运行source命令，重新加载.zshrc文件
+
+### 常见问题
+
+#### 不安全的完成相关目录提示
+
+1. 在.zshrc文件的第一行添加 `ZSH_DISABLE_COMPFIX=true`
+
+2. 运行source命令，重新加载.zshrc文件
+
+   ```bash
+   source ~/.zshrc
+   ```
